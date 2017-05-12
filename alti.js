@@ -7,14 +7,10 @@ var port = new SerialPort('dev/ttyAMA0', {
 });
 
 port.on('open', () => {
-
 	console.log('Porta aberta');
 })
 
 port.write([85], (err) => {
-
 	if (err) { return console.log('Erro: ', err.message) }
-		console.log('mensagem escrita');
-
-	
+		console.log('mensagem escrita');	
 })
